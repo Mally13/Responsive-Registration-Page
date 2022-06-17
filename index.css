@@ -4,6 +4,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+body{
+    color:#ffffff;
+}
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -11,7 +14,14 @@
 	align-items: center;
 	justify-content: center;
 }
-
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+p{
+    font-size: 1rem;
+}
 #hero {
 	background-image: url(./images/bg-intro-desktop.png);
 	background-size: cover;
@@ -26,7 +36,7 @@
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: hsl(0, 100%, 74%);
+	background-color: hsl(0deg 78% 54% / 76%);
 	opacity: 0.7;
 	z-index: -1;
 }
@@ -42,8 +52,11 @@
     display: flex;
 }
 .wording-content{
+    justify-content: center;
     padding: 40px;
+    display: flex;
     width: 50%;
+    flex-direction: column;
 }
 .form-content{
     width: 50%;
@@ -53,12 +66,14 @@
 }
 .form-content button:nth-child(1){
     height: 56px;
-    background-color: hsl(246, 25%, 77%);
-    border: 1px solid hsl(246, 25%, 77%);
+    background-color: #5D54A3;
+    border: #5D54A3;
     border-radius: 5px;
     padding: 10px 0;
     margin-bottom: 16px;
-    color: white;;
+    color: white;
+    font-weight: 600;
+
 }
 .register{
     padding: 50px;
@@ -71,10 +86,11 @@
     padding: 8px;
     border-radius: 8px;
     margin-bottom: 16px;
-    border: 1px solid hsl(246, 25%, 77%);
+    border: 2px solid hsl(246, 25%, 77%);
     font-size: 14px;
     font-weight: 600;
-    color:hsl(249, 10%, 26%);
+    color:#444348;
+    line-height: 24px;
 }
 .register input:nth-child(1),.register input:nth-child(2){
     text-transform: capitalize;
@@ -84,19 +100,31 @@
 }
 
 .register input:focus-visible{
-    border: 1px solid hsl(249, 10%, 26%) ;
+    border: 2px solid #5D54A3 ;
     outline: none;
-    caret-color:hsl(249, 10%, 26%)  ;
+    caret-color:#5D54A3 ;
+
+}
+.register .tc{
+    color: hsl(246, 25%, 77%);
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+}
+.register .tc span{
+    font-weight: 600;
+	color: hsl(0deg 78% 54% / 76%);
 
 }
 .register button{
     width: 100%;
     height: 56px;
-    background-color: hsl(154, 59%, 51%);
-    border: 1px solid hsl(154, 59%, 51%);
+    background-color: #37CB8A;
+    border: 1px solid #37CB8A;
     border-radius: 8px;
     padding: 10px 0;
     margin-bottom: 16px;
     color: white;
+    font-weight: 600;
 
 }
