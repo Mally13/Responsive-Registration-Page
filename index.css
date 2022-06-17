@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#hero {
+	background-image: url(./images/bg-intro-desktop.png);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+#hero::after{
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: hsl(0, 100%, 74%);
+	opacity: 0.7;
+	z-index: -1;
+}
+#hero .hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+}
+#main-content{
+    display: flex;
+}
+.wording-content{
+    padding: 40px;
+    width: 50%;
+}
+.form-content{
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.form-content button:nth-child(1){
+    height: 56px;
+    background-color: hsl(246, 25%, 77%);
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-bottom: 16px;
+    color: white;;
+}
+.register{
+    padding: 50px;
+    background-color: white;
+    border-radius: 8px;
+}
+.register input{
+    width: 100%;
+    height: 56px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-size: 14px;
+    font-weight: 600;
+    color:hsl(249, 10%, 26%);
+}
+.register input:nth-child(1),.register input:nth-child(2){
+    text-transform: capitalize;
+}
+.register input::placeholder{
+    color:hsl(246, 25%, 77%);
+}
+
+.register input:focus-visible{
+    border: 1px solid hsl(249, 10%, 26%) ;
+    outline: none;
+    caret-color:hsl(249, 10%, 26%)  ;
+
+}
+.register button{
+    width: 100%;
+    height: 56px;
+    background-color: hsl(154, 59%, 51%);
+    border: 1px solid hsl(154, 59%, 51%);
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-bottom: 16px;
+    color: white;
+
+}
