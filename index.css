@@ -354,6 +354,9 @@ p{
         color:#444348;
         line-height: 24px;
     }
+    .register .form-group input[type="email"]{
+        text-transform: lowercase;
+    }
     .register .form-group input:nth-child(1),.register input:nth-child(2){
         text-transform: capitalize;
     }
