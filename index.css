@@ -329,6 +329,7 @@ p{
         margin-bottom: 16px;
         color: white;
         font-weight: 500;
+        box-shadow:0 8px 2px -2px #75727ca6;
     }
     .form-content button:nth-child(1) strong{ 
         font-weight: 700;
@@ -337,6 +338,7 @@ p{
         padding: 50px;
         background-color: white;
         border-radius: 8px;
+        box-shadow: 0 8px 2px -2px #75727ca6;
     }
     .register .form-group{
         margin-bottom: 8px;
@@ -412,6 +414,7 @@ p{
     
     }
     .register button{
+        box-shadow: 0 8px 2px -2px #c5c0d4a6;
         width: 100%;
         height: 56px;
         background-color: hsl(154, 59%, 51%);
@@ -421,6 +424,11 @@ p{
         margin-bottom: 16px;
         color: white;
         font-weight: 600;
+    }
+    .register button:hover,.register button:active{
+        background-color: hsl(154deg 68% 66%);
+        border: 1px solid hsl(154deg 68% 66%);;
+        cursor: pointer;
     }
     .form-content button:nth-child(1) {
         height: auto;
