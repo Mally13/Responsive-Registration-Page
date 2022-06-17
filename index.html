@@ -19,19 +19,31 @@
                             Watching scripted tutorials is great, but understanding how developers think is invaluable.
                         </p>
                     </div>
-                    <div class="form-content">
-                        <button type="button"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
-                        <form class="register">
-                            <input type="text" name="firstname" placeholder="First Name"/>
-                            <input type="text" name="lastname" placeholder="Last Name"/>
-                            <input type="email" name="email" placeholder="Email Address"/>
-                            <input type="password" name="password" placeholder="Password"/>
+                    <form class="form-content">
+                        <button type="reset"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+                        <div class="register">
+                            <div class="form-group">
+                                <input type="text" name="firstname" placeholder="First Name" pattern="[A-Za-z]+" title="Letters only" required/>
+                                <div class="requirements">Must be a valid name</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="lastname" placeholder="Last Name" pattern="[A-Za-z]+" title="Letters only" required/>
+                                <div class="requirements">Must be a valid name</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Invalid email" required/>
+                                <div class="requirements">Must be a valid email</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" placeholder="Password" pattern=".{8,}" title="Eight or more characters" required/>
+                                <div class="requirements">Must be 8 or more characters</div>
+                            </div>
                             <button type="submit">CLAIM YOUR FREE TRIAL</button>
                             <div class="tc">
                                 By clicking the button, you are agreeing to our <span>Terms and Services</span>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </section>
             </div>
     </div>
