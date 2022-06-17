@@ -357,7 +357,7 @@ p{
     .register .form-group input[type="email"]{
         text-transform: lowercase;
     }
-    .register .form-group input:nth-child(1),.register input:nth-child(2){
+    .register .form-group input:nth-child(1),.register .form-group input:nth-child(2){
         text-transform: capitalize;
     }
     .register .form-group input::placeholder{
@@ -370,7 +370,9 @@ p{
         caret-color:#5D54A3 ;
     
     }
-    .register>.form-group input[type="text"]:valid:not(:placeholder-shown),.register>input[type="email"]:valid:not(:placeholder-shown),.register>input[type="password"]:valid:not(:placeholder-shown){
+    .register>.form-group input[type="text"]:valid:not(:placeholder-shown),
+    .register>.form-group input[type="email"]:valid:not(:placeholder-shown),
+    .register>.form-group input[type="password"]:valid:not(:placeholder-shown){
         background: url('https://api.iconify.design/akar-icons/circle-check-fill.svg?color=rgba(22%2C%20194%2C%20118%2C%200.7098039215686275)')  no-repeat center right / contain;
         background-size: 25px;
         background-position: 95%;
